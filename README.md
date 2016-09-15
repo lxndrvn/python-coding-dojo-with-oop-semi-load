@@ -14,7 +14,7 @@ Store the Contact objects (which you instantiate) in a list, which is a class at
 
 ## Step 3
 
-Write a reset_contacts class method, which can clean the all_contacts list.
+Write a reset_contacts class method, which can clean (clean and not re-instantiate!) the all_contacts list.
 
 ## Step 4
 
@@ -23,7 +23,7 @@ Write a "Supplier" class, which is inherited from the Contact class.
 ## Step 5
 
 Write an "order" method for the Supplier, which has a single argument - a string.
-Store these orders in a class attribute, called all_orders, in a dictionary, where the key is the supplier email (because it's usually unique).
+Store these orders in a class attribute, called all_orders, in a dictionary, where the key is the supplier email (because it's usually unique), and the value is a list of the orders. So if you add multiple orders, it will be added to the list of that key.
 
 ## Step 6
 
@@ -32,7 +32,7 @@ Use this custom ContactList as the storage of all_contacts.
 
 ## Step 7
 
-Write a "search" method for the ContactList, which can search in the name of the stored contacts and find the matching names. The input argument is a string (what we search), and the output is a list of all matching Contact objects.
+Write a "search" method for the ContactList, which can search in the name of the stored contacts and find the matching names (not with exact match, it should also work for matching parts). The input argument is a string (what we search), and the output is a list of all matching Contact objects.
 
 ## Step 8
 
